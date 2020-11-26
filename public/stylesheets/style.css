@@ -1,13 +1,16 @@
+/*global*/
 * {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Alatsi', sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0; }
 
+body {
+  color: #333; }
+
 a {
-  color: #333;
   text-decoration: none;
-  width: 100px; }
+  color: #333; }
 
 button {
   border: none;
@@ -34,11 +37,14 @@ input {
   padding: 10px 15px;
   border-radius: 10px; }
 
-.visible {
-  display: block; }
-
+/*scroll*/
 .invisible {
-  display: none; }
+  transition: opacity 0.5s ease;
+  opacity: 0.0; }
+
+.visible {
+  transition: opacity 0.5s ease;
+  opacity: 1.0; }
 
 /*layouot*/
 .menu {
@@ -61,6 +67,12 @@ input {
   width: 40px;
   height: 40px; }
 
+footer {
+  height: 64px;
+  text-align: center;
+  line-height: 64px;
+  font-size: 18px; }
+
 /*auth*/
 .auth {
   width: 60%;
@@ -70,8 +82,8 @@ input {
 .auth h1 {
   font-size: 32px; }
 
-/*header*/
-.about-container {
+/*title*/
+.title-container {
   background-color: #ffdc6b;
   animation: gradetion 8s infinite;
   padding: 30px;
@@ -105,7 +117,7 @@ input {
   100% {
     background-color: #fff; } }
 
-.about-container h1 {
+.title-container h1 {
   font-size: 42px;
   text-align: center;
   margin-top: 200px;
@@ -141,11 +153,49 @@ input {
     color: #f8c620; } }
 
 @media (min-width: 768px) {
-  .about-container {
+  .title-container {
     height: 650px; }
-  .about-container h1 {
+  .title-container h1 {
     font-size: 62px;
     margin-top: 230px; } }
+
+/*about*/
+.about {
+  width: 70%;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  padding: 40px;
+  border-radius: 10px; }
+
+.about img {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px; }
+
+.about h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.about p {
+  font-size: 28px;
+  font-weight: 100; }
+
+.about a {
+  margin: 20px 20px 0 0;
+  display: block;
+  text-align: right;
+  font-size: 18px; }
+
+.about a:hover {
+  font-size: 22px;
+  transform: scale(1.04);
+  transition: 1s; }
+
+@media (min-width: 768px) {
+  .about a {
+    margin-left: 200px; } }
 
 /*main page*/
 .imgs {
@@ -156,14 +206,14 @@ input {
   text-align: center; }
 
 .imgDetail {
-  margin: 30px auto; }
+  margin: 30px auto;
+  transition: 1s; }
 
 .imgDetail img {
   width: 300px;
   height: 300px; }
 
 .imgDetail:hover {
-  transition: 1s;
   transform: scale(1.1);
   border: 1px solid #ddd; }
 
@@ -186,5 +236,33 @@ input {
     display: none; }
   .hide {
     display: block; } }
+
+/*about-detail*/
+.about-detail {
+  background-color: #333;
+  color: white;
+  padding: 50px 0; }
+
+.about-detail img {
+  display: block;
+  width: 70%;
+  height: 70%;
+  margin: 30px auto; }
+
+.aboutDetail-text {
+  width: 70%;
+  margin: 20px auto; }
+
+.aboutDetail-text h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px; }
+
+.about-detail a {
+  display: block;
+  color: white;
+  text-align: right;
+  margin-top: 30px;
+  border-bottom: 1px solid white; }
 
 /*# sourceMappingURL=style.css.map */
