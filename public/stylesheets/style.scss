@@ -1,0 +1,197 @@
+* {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin:0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  width: 100px;
+}
+
+button{
+  border:none;
+  background-color: #333;
+  color:white;
+  border-radius: 10px;
+  padding : 15px 15px;
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+
+button:hover{
+  opacity: 0.7;
+}
+
+label{
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+input{
+  border:none;
+  border: 1px solid #ddd;
+  width: 100%;
+  padding:10px 15px;
+  border-radius: 10px;
+}
+
+.visible{
+  display: block;
+}
+
+.invisible{
+  display: none;
+}
+
+/*layouot*/
+.menu{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.menu ul{
+  list-style: none;
+}
+
+.menu ul li{
+  display: inline;
+  margin-left: 30px;
+  line-height: 40px;
+}
+
+.menu ul li a{
+  font-size: 18px;
+}
+
+.menu img{
+  width: 40px;
+  height: 40px;
+}
+
+/*auth*/
+.auth{
+  width: 60%;
+  margin:10px auto;
+  text-align: center;
+}
+
+.auth h1{
+  font-size: 32px;
+}
+/*header*/
+.about-container{
+  background-color: rgb(255, 220, 107);
+  animation: gradetion 8s infinite;
+  padding: 30px;
+  height: 500px;
+}
+
+@keyframes gradetion {
+  0% {background-color: #fff}
+  10% {background-color: rgb(253, 251, 242);}
+  15% {background-color: rgb(241, 234, 212);}
+  20% {background-color: rgb(228, 208, 145);}
+  30% {background-color: rgb(240, 211, 116);}
+  40% {background-color: rgb(245, 206, 78);}
+  50% {background-color: rgb(248, 198, 32);}
+  60% {background-color: rgb(245, 206, 78);}
+  70% {background-color: rgb(240, 211, 116);}
+  80% {background-color: rgb(228, 208, 145);}
+  90% {background-color: rgb(241, 234, 212);}
+  95% {background-color: rgb(248, 244, 232);}
+  100% {background-color: #fff;}
+}
+
+.about-container h1{
+  font-size: 42px;
+  text-align: center;
+  margin-top: 200px;
+  color: white;
+  animation: gradetionTitle 8s infinite;
+}
+
+@keyframes gradetionTitle {
+  0% {color: rgb(248, 198, 32)}
+  10% {color: rgb(245, 206, 78);}
+  15% {color: rgb(240, 211, 116);}
+  20% {color: rgb(228, 208, 145);}
+  30% {color: rgb(241, 234, 212);}
+  40% {color: rgb(248, 244, 232);}
+  50% {color: #fff;}
+  60% {color: rgb(248, 244, 232);}
+  70% {color: rgb(241, 234, 212);}
+  80% {color: rgb(228, 208, 145);}
+  90% {color: rgb(240, 211, 116);}
+  95% {color: rgb(245, 206, 78);;}
+  100% {color: rgb(248, 198, 32);}
+}
+
+@media (min-width:768px) {
+  .about-container{
+    height: 650px;
+  }
+
+  .about-container h1{
+    font-size: 62px;
+    margin-top: 230px;
+  }
+}
+
+/*main page*/
+.imgs{
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.imgDetail{
+  margin: 30px auto;
+}
+
+.imgDetail img{
+  width: 300px;
+  height: 300px;
+}
+
+.imgDetail:hover{
+  transition: 1s;
+  transform: scale(1.1);
+  border: 1px solid #ddd;
+}
+
+.btns{
+  display: flex;
+  justify-content: space-between;
+}
+
+.hide{
+  display: none;
+}
+
+.btns button{
+  width: 20%;
+  margin: 10px 10px;
+}
+
+@media (min-width: 768px){
+  .imgs{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .btns button{
+    display: none;
+  }
+
+  .hide{
+    display: block;
+  }
+}
