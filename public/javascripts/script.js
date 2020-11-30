@@ -15,7 +15,6 @@ function changeImg(){
 /*scroll*/
 ScrollReveal().reveal(".about", {
   duration :1800,
-  scale : 2,
   reset:true,
 }); 
 
@@ -30,5 +29,9 @@ ScrollReveal().reveal(".about-detail",{
   reset:true,
 })
 
-
+ScrollReveal().reveal(".title",{
+  duration:2500,
+  scale : 2.8,
+  reset :true
+})
 
