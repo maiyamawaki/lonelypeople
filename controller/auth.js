@@ -42,17 +42,14 @@ exports.loginProcess = async(req, res)=>{
 	if(bcrypt.compareSync(password,existingUser.password)){
 		req.session.user = existingUser;
 		console.log(req.session.user)
-		res.redirect("/auth/profile")
+		res.redirect("/private/all")
 	}else{
 		return res.render("auth/login", {message : "La contraseña esta equivocada."})
 	}
 }
 
-/*profile*/
-exports.profileView = (req, res)=>{
-	if(req.session.user){
-		res.render("auth/profile", req.session.user)
-	}else{
-		res.render("auth/login")
-	}
+/*logout*/
+exports.logout = (req,res) => {
+	req.logout();
+	res.redirect("/")
 } 

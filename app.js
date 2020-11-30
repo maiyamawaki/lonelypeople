@@ -59,8 +59,8 @@ const index = require('./routes/index');
 app.use('/', index);
 const auth = require("./routes/auth");
 app.use("/", auth)
-const detail = require("./routes/detail");
-app.use("/", detail)
+const allview = require("./routes/allview");
+app.use("/", allview)
 
 
 module.exports = app;

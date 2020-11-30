@@ -4,7 +4,7 @@ const { signupView,
 				signupProcess,
 				loginView,
 				loginProcess,
-				profileView  } = require("../controller/auth");
+				logout  } = require("../controller/auth");
 
 
 /*signup*/ 
@@ -13,7 +13,7 @@ router.post("/auth/signup", signupProcess)
 /*login*/
 router.get("/auth/login", loginView ) 
 router.post("/auth/login", loginProcess)
-/*profile*/
-router.get("/auth/profile", profileView) 
+/*logout*/  
+router.get("/logout", logout)
 
 module.exports = router;

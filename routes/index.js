@@ -10,6 +10,4 @@ router.get('/', (req, res, next) => {
 
 router.get("/about/about", viewAboutMe)
 
-
-
 module.exports = router;
