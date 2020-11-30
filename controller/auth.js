@@ -1,6 +1,6 @@
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
-
+const passport = require("../config/passport");
 /*Signup*/ 
 exports.signupView = (req, res)=>{
 	res.render("auth/signup")
@@ -30,23 +30,10 @@ exports.loginView = (req, res)=>{
 	res.render("auth/login")
 }
 
-exports.loginProcess = async(req, res)=>{
-	const {email, password} = req.body;
-	if(email === "" || password === ""){
-		return res.render("auth/login", {message : "Te faltan los datos..."})
-	}
-	const existingUser = await User.findOne({email});
-	if(!existingUser){
-		return res.render("auth/login", {message : "Parece que aun no estas registrado!"})
-	}
-	if(bcrypt.compareSync(password,existingUser.password)){
-		req.session.user = existingUser;
-		console.log(req.session.user)
-		res.redirect("/private/all")
-	}else{
-		return res.render("auth/login", {message : "La contraseña esta equivocada."})
-	}
-}
+exports.loginProcess = passport.authenticate("local", {
+	successRedirect : "/private/all",
+	failureRedirect : "/auth/login",
+})
 
 /*logout*/
 exports.logout = (req,res) => {

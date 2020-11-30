@@ -108,17 +108,25 @@ footer{
 
 @keyframes gradetion {
   0% {background-color: #fff}
-  10% {background-color: rgb(253, 251, 242);}
-  15% {background-color: rgb(241, 234, 212);}
-  20% {background-color: rgb(228, 208, 145);}
-  30% {background-color: rgb(240, 211, 116);}
-  40% {background-color: rgb(245, 206, 78);}
-  50% {background-color: rgb(248, 198, 32);}
-  60% {background-color: rgb(245, 206, 78);}
-  70% {background-color: rgb(240, 211, 116);}
-  80% {background-color: rgb(228, 208, 145);}
-  90% {background-color: rgb(241, 234, 212);}
-  95% {background-color: rgb(248, 244, 232);}
+  5% {background-color: rgb(250, 250, 250)}
+  10% {background-color: rgb(240, 240, 240);}
+  15% {background-color: rgb(230, 230, 230);}
+  20% {background-color: rgb(220, 220, 220);}
+  25% {background-color: rgb(210, 210, 210);}
+  30% {background-color: rgb(200, 200, 200);}
+  35% {background-color: rgb(190, 190, 190);}
+  40% {background-color: rgb(180, 180, 180);}
+  45% {background-color: rgb(170, 170, 170);}
+  50% {background-color: rgb(160, 160, 160);}
+  55% {background-color: rgb(170, 170, 170);}
+  60% {background-color: rgb(180, 180, 180);}
+  65% {background-color: rgb(190, 190, 190);}
+  70% {background-color: rgb(200, 200, 200);}
+  75% {background-color: rgb(210, 210, 210);}
+  80% {background-color: rgb(220, 220, 220);}
+  85% {background-color: rgb(230, 230, 230);}
+  90% {background-color: rgb(240, 240, 240);}
+  95% {background-color: rgb(250, 250, 250);}
   100% {background-color: #fff;}
 }
 
@@ -131,19 +139,27 @@ footer{
 }
 
 @keyframes gradetionTitle {
-  0% {color: rgb(248, 198, 32)}
-  10% {color: rgb(245, 206, 78);}
-  15% {color: rgb(240, 211, 116);}
-  20% {color: rgb(228, 208, 145);}
-  30% {color: rgb(241, 234, 212);}
-  40% {color: rgb(248, 244, 232);}
+  0% {color: rgb(160, 160, 160)}
+  5% {color: rgb(170, 170, 170)}
+  10% {color: rgb(180, 180, 180);}
+  15% {color: rgb(190, 190, 190);}
+  20% {color: rgb(200, 200, 200);}
+  25% {color: rgb(210, 210, 210);}
+  30% {color: rgb(220, 220, 220);}
+  35% {color: rgb(230, 230, 230);}
+  40% {color: rgb(240, 240, 240);}
+  45% {color: rgb(250, 250, 250);}
   50% {color: #fff;}
-  60% {color: rgb(248, 244, 232);}
-  70% {color: rgb(241, 234, 212);}
-  80% {color: rgb(228, 208, 145);}
-  90% {color: rgb(240, 211, 116);}
-  95% {color: rgb(245, 206, 78);;}
-  100% {color: rgb(248, 198, 32);}
+  55% {color: rgb(250, 250, 250);}
+  60% {color: rgb(240, 240, 240);}
+  65% {color: rgb(230, 230, 230);}
+  70% {color: rgb(220, 220, 220);}
+  75% {color: rgb(210, 210, 210);}
+  80% {color: rgb(200, 200, 200);}
+  85% {color: rgb(190, 190, 190);}
+  90% {color: rgb(180, 180, 180);}
+  95% {color: rgb(170, 170, 170);}
+  100% {color: rgb(160, 160, 160);}
 }
 
 @media (min-width:768px) {

@@ -92,28 +92,44 @@ footer {
 @keyframes gradetion {
   0% {
     background-color: #fff; }
+  5% {
+    background-color: #fafafa; }
   10% {
-    background-color: #fdfbf2; }
+    background-color: #f0f0f0; }
   15% {
-    background-color: #f1ead4; }
+    background-color: #e6e6e6; }
   20% {
-    background-color: #e4d091; }
+    background-color: gainsboro; }
+  25% {
+    background-color: #d2d2d2; }
   30% {
-    background-color: #f0d374; }
+    background-color: #c8c8c8; }
+  35% {
+    background-color: #bebebe; }
   40% {
-    background-color: #f5ce4e; }
+    background-color: #b4b4b4; }
+  45% {
+    background-color: #aaaaaa; }
   50% {
-    background-color: #f8c620; }
+    background-color: #a0a0a0; }
+  55% {
+    background-color: #aaaaaa; }
   60% {
-    background-color: #f5ce4e; }
+    background-color: #b4b4b4; }
+  65% {
+    background-color: #bebebe; }
   70% {
-    background-color: #f0d374; }
+    background-color: #c8c8c8; }
+  75% {
+    background-color: #d2d2d2; }
   80% {
-    background-color: #e4d091; }
+    background-color: gainsboro; }
+  85% {
+    background-color: #e6e6e6; }
   90% {
-    background-color: #f1ead4; }
+    background-color: #f0f0f0; }
   95% {
-    background-color: #f8f4e8; }
+    background-color: #fafafa; }
   100% {
     background-color: #fff; } }
 
@@ -126,31 +142,47 @@ footer {
 
 @keyframes gradetionTitle {
   0% {
-    color: #f8c620; }
+    color: #a0a0a0; }
+  5% {
+    color: #aaaaaa; }
   10% {
-    color: #f5ce4e; }
+    color: #b4b4b4; }
   15% {
-    color: #f0d374; }
+    color: #bebebe; }
   20% {
-    color: #e4d091; }
+    color: #c8c8c8; }
+  25% {
+    color: #d2d2d2; }
   30% {
-    color: #f1ead4; }
+    color: gainsboro; }
+  35% {
+    color: #e6e6e6; }
   40% {
-    color: #f8f4e8; }
+    color: #f0f0f0; }
+  45% {
+    color: #fafafa; }
   50% {
     color: #fff; }
+  55% {
+    color: #fafafa; }
   60% {
-    color: #f8f4e8; }
+    color: #f0f0f0; }
+  65% {
+    color: #e6e6e6; }
   70% {
-    color: #f1ead4; }
+    color: gainsboro; }
+  75% {
+    color: #d2d2d2; }
   80% {
-    color: #e4d091; }
+    color: #c8c8c8; }
+  85% {
+    color: #bebebe; }
   90% {
-    color: #f0d374; }
+    color: #b4b4b4; }
   95% {
-    color: #f5ce4e; }
+    color: #aaaaaa; }
   100% {
-    color: #f8c620; } }
+    color: #a0a0a0; } }
 
 @media (min-width: 768px) {
   .title-container {

@@ -25,7 +25,7 @@ const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.
 const app = express();
 
 //session confg
-require("./config/db.config")
+require("./config/session")
 require("./config/session")(app)
 
 // Middleware Setup
