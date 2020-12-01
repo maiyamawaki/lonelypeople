@@ -1,5 +1,10 @@
 <div class="contact">
+	{{#if message}}
+		<p>{{message}}</p>
+	{{/if}}
 	<h1>Contact</h1>
+	<br>
+	<span>If you have any questions, contact me.</span>
 	<form action="/private/contact" method="POST">
 	<label for="title"></label>
 	<br>

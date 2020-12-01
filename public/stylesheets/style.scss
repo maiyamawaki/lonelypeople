@@ -75,7 +75,7 @@ textarea{
 
 .menu ul li{
   display: inline;
-  margin-left: 30px;
+  margin-left: 10px;
   line-height: 40px;
 }
 
@@ -216,6 +216,7 @@ footer{
 .imgDetail{
   margin: 30px auto;
   transition: 1s;
+  height: 100%;
 }
 
 .imgDetail img{
@@ -324,7 +325,7 @@ footer{
   }
 
   .about-detail a{
-    margin-top: 150px;
+    margin-top: 100px;
   }
 }
 
@@ -350,11 +351,37 @@ footer{
   }
 }
 
-
 /*contact*/
 .contact{
   width: 60%;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20%;
+}
+
+/*private imgdetail*/
+.imgdetail{
+  background-color: #333;
+  text-align: center;
+  padding: 120px 0;
+}
+
+.imgdetail img{
+  width: 80%;
+  height: 80%;
+}
+
+.imgdetail-textcontainer a{
+  color: white;
+  font-size: 18px;
+  display: block;
+  width: 40%;
+  margin: 40px auto 0 auto;
+  border-bottom:1px solid white;
+}
+
+@media (min-width : 768px){
+  .imgdetail img{
+    width: 40%;
+  }
 }

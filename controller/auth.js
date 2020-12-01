@@ -8,11 +8,11 @@ exports.signupView = (req, res)=>{
 exports.signupProcess = async(req, res)=>{
 	const {username, email, password} = req.body;
 	if(username === "" || email === "" || password === ""){
-		return res.render("auth/signup", {message : "Te faltan los datos..."})
+		return res.render("auth/signup", {message : "You are missing the data"})
 	}
 	const existingUser = await User.findOne({$or:[{email}, {username}]});
 	if(existingUser){
-		return res.render("auth/signup", {message : "El nombre de usuario o el correo electronico ya esta en uso..."})
+		return res.render("auth/signup", {message : "The username or email is already in use"})
 	}
 	const salt = bcrypt.genSaltSync(12);
 	const hashPass = bcrypt.hashSync(password, salt);
