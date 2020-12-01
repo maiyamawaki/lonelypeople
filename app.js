@@ -51,7 +51,7 @@ app.use(express.static(path.join(__dirname, 'public', 'img')));
 
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'lonelypeople';
 
 
 

@@ -31,6 +31,12 @@ label {
   text-align: left; }
 
 input {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px; }
+
+textarea {
   border: none;
   border: 1px solid #ddd;
   width: 100%;
@@ -84,105 +90,64 @@ footer {
 
 /*title*/
 .title-container {
-  background-color: #ffdc6b;
-  animation: gradetion 8s infinite;
+  animation: gradetion ease 8s infinite;
   padding: 30px;
   height: 500px; }
 
 @keyframes gradetion {
   0% {
-    background-color: #fff; }
-  5% {
-    background-color: #fafafa; }
+    background-color: white; }
   10% {
-    background-color: #f0f0f0; }
-  15% {
     background-color: #e6e6e6; }
   20% {
-    background-color: gainsboro; }
-  25% {
-    background-color: #d2d2d2; }
+    background-color: #969696; }
   30% {
-    background-color: #c8c8c8; }
-  35% {
-    background-color: #bebebe; }
+    background-color: #646464; }
   40% {
-    background-color: #b4b4b4; }
-  45% {
-    background-color: #aaaaaa; }
+    background-color: #464646; }
   50% {
-    background-color: #a0a0a0; }
-  55% {
-    background-color: #aaaaaa; }
+    background-color: #333333; }
   60% {
-    background-color: #b4b4b4; }
-  65% {
-    background-color: #bebebe; }
+    background-color: #464646; }
   70% {
-    background-color: #c8c8c8; }
-  75% {
-    background-color: #d2d2d2; }
+    background-color: #646464; }
   80% {
-    background-color: gainsboro; }
-  85% {
-    background-color: #e6e6e6; }
+    background-color: #969696; }
   90% {
-    background-color: #f0f0f0; }
-  95% {
-    background-color: #fafafa; }
+    background-color: #c8c8c8; }
   100% {
-    background-color: #fff; } }
+    background-color: white; } }
 
 .title-container h1 {
   font-size: 42px;
   text-align: center;
   margin-top: 200px;
   color: white;
-  animation: gradetionTitle 8s infinite; }
+  animation: gradetionTitle ease 7s infinite; }
 
 @keyframes gradetionTitle {
   0% {
-    color: #a0a0a0; }
-  5% {
-    color: #aaaaaa; }
+    color: #333333; }
   10% {
-    color: #b4b4b4; }
-  15% {
-    color: #bebebe; }
+    color: #464646; }
   20% {
-    color: #c8c8c8; }
-  25% {
-    color: #d2d2d2; }
+    color: #646464; }
   30% {
-    color: gainsboro; }
-  35% {
-    color: #e6e6e6; }
+    color: #969696; }
   40% {
-    color: #f0f0f0; }
-  45% {
-    color: #fafafa; }
-  50% {
-    color: #fff; }
-  55% {
-    color: #fafafa; }
-  60% {
-    color: #f0f0f0; }
-  65% {
-    color: #e6e6e6; }
-  70% {
-    color: gainsboro; }
-  75% {
-    color: #d2d2d2; }
-  80% {
     color: #c8c8c8; }
-  85% {
-    color: #bebebe; }
+  50% {
+    color: white; }
+  60% {
+    color: #c8c8c8; }
+  70% {
+    color: #969696; }
+  80% {
+    color: #646464; }
   90% {
-    color: #b4b4b4; }
-  95% {
-    color: #aaaaaa; }
+    color: #464646; }
   100% {
-    color: #a0a0a0; } }
+    color: #333333; } }
 
 @media (min-width: 768px) {
   .title-container {
@@ -195,9 +160,7 @@ footer {
 .about {
   width: 70%;
   margin: 20px auto;
-  border: 1px solid #ddd;
-  padding: 40px;
-  border-radius: 10px; }
+  padding: 40px; }
 
 .about img {
   display: block;
@@ -245,10 +208,6 @@ footer {
 .imgDetail img {
   width: 300px;
   height: 300px; }
-
-.imgDetail:hover {
-  transform: scale(1.1);
-  border: 1px solid #ddd; }
 
 .btns {
   display: flex;
@@ -309,16 +268,24 @@ footer {
 @media (min-width: 768px) {
   .about-detail {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    padding: 100px 0; }
   .about-detail img {
     width: 30%;
     margin: 0; }
   .aboutDetail-text {
-    width: 30%;
+    width: 60%;
     margin: 20px 0 0 20px;
     letter-spacing: 3px; }
   .about-detail a {
-    margin-top: 230px; } }
+    margin-top: 20px; } }
+
+@media (min-width: 1200px) {
+  .aboutDetail-text {
+    width: 30%;
+    margin-top: 40px; }
+  .about-detail a {
+    margin-top: 150px; } }
 
 /*alldraws*/
 .alldraws {
@@ -330,9 +297,16 @@ footer {
     width: 80%;
     margin: 10px auto; }
   .imgDetail {
-    width: 28%; }
+    width: 32%; }
   .imgDetail img {
     width: 100%;
     height: 100%; } }
+
+/*contact*/
+.contact {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20%; }
 
 /*# sourceMappingURL=style.css.map */

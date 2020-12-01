@@ -37,6 +37,13 @@ label{
 }
 
 input{
+  border: 1px solid #ddd;
+  width: 100%;
+  padding:10px 15px;
+  border-radius: 10px;
+}
+
+textarea{
   border:none;
   border: 1px solid #ddd;
   width: 100%;
@@ -100,34 +107,23 @@ footer{
 }
 /*title*/
 .title-container{
-  background-color: rgb(255, 220, 107);
-  animation: gradetion 8s infinite;
+  animation: gradetion ease 8s infinite;
   padding: 30px;
   height: 500px;
 }
 
 @keyframes gradetion {
-  0% {background-color: #fff}
-  5% {background-color: rgb(250, 250, 250)}
-  10% {background-color: rgb(240, 240, 240);}
-  15% {background-color: rgb(230, 230, 230);}
-  20% {background-color: rgb(220, 220, 220);}
-  25% {background-color: rgb(210, 210, 210);}
-  30% {background-color: rgb(200, 200, 200);}
-  35% {background-color: rgb(190, 190, 190);}
-  40% {background-color: rgb(180, 180, 180);}
-  45% {background-color: rgb(170, 170, 170);}
-  50% {background-color: rgb(160, 160, 160);}
-  55% {background-color: rgb(170, 170, 170);}
-  60% {background-color: rgb(180, 180, 180);}
-  65% {background-color: rgb(190, 190, 190);}
-  70% {background-color: rgb(200, 200, 200);}
-  75% {background-color: rgb(210, 210, 210);}
-  80% {background-color: rgb(220, 220, 220);}
-  85% {background-color: rgb(230, 230, 230);}
-  90% {background-color: rgb(240, 240, 240);}
-  95% {background-color: rgb(250, 250, 250);}
-  100% {background-color: #fff;}
+  0% {background-color: rgb(255,255,255)}
+  10% {background-color: rgb(230, 230, 230);}
+  20% {background-color: rgb(150, 150, 150);}
+  30% {background-color: rgb(100, 100, 100);}
+  40% {background-color: rgb(70, 70, 70);}
+  50% {background-color: rgb(51,51,51);}
+  60% {background-color: rgb(70, 70, 70);}
+  70% {background-color: rgb(100, 100, 100);}
+  80% {background-color: rgb(150, 150, 150);}
+  90% {background-color: rgb(200, 200, 200);}
+  100% {background-color:rgb(255,255,255);}
 }
 
 .title-container h1{
@@ -135,31 +131,21 @@ footer{
   text-align: center;
   margin-top: 200px;
   color: white;
-  animation: gradetionTitle 8s infinite;
+  animation: gradetionTitle ease 7s infinite;
 }
 
 @keyframes gradetionTitle {
-  0% {color: rgb(160, 160, 160)}
-  5% {color: rgb(170, 170, 170)}
-  10% {color: rgb(180, 180, 180);}
-  15% {color: rgb(190, 190, 190);}
-  20% {color: rgb(200, 200, 200);}
-  25% {color: rgb(210, 210, 210);}
-  30% {color: rgb(220, 220, 220);}
-  35% {color: rgb(230, 230, 230);}
-  40% {color: rgb(240, 240, 240);}
-  45% {color: rgb(250, 250, 250);}
-  50% {color: #fff;}
-  55% {color: rgb(250, 250, 250);}
-  60% {color: rgb(240, 240, 240);}
-  65% {color: rgb(230, 230, 230);}
-  70% {color: rgb(220, 220, 220);}
-  75% {color: rgb(210, 210, 210);}
-  80% {color: rgb(200, 200, 200);}
-  85% {color: rgb(190, 190, 190);}
-  90% {color: rgb(180, 180, 180);}
-  95% {color: rgb(170, 170, 170);}
-  100% {color: rgb(160, 160, 160);}
+  0% {color: rgb(51,51,51)}
+  10% {color: rgb(70, 70, 70);}
+  20% {color: rgb(100, 100, 100);}
+  30% {color: rgb(150, 150, 150);}
+  40% {color: rgb(200, 200, 200);}
+  50% {color: rgb(255,255,255);}
+  60% {color: rgb(200, 200, 200);}
+  70% {color: rgb(150, 150, 150);}
+  80% {color: rgb(100, 100, 100);}
+  90% {color: rgb(70, 70, 70);}
+  100% {color: rgb(51,51,51);}
 }
 
 @media (min-width:768px) {
@@ -177,9 +163,7 @@ footer{
 .about{
   width: 70%;
   margin:20px auto;
-  border: 1px solid #ddd;
   padding: 40px;
-  border-radius: 10px;
 }
 
 .about img{
@@ -237,11 +221,6 @@ footer{
 .imgDetail img{
   width: 300px;
   height: 300px;
-}
-
-.imgDetail:hover{
-  transform: scale(1.1);
-  border: 1px solid #ddd;
 }
 
 .btns{
@@ -319,6 +298,7 @@ footer{
   .about-detail{
     display: flex;
     justify-content: center;
+    padding: 100px 0;
   }
 
   .about-detail img{
@@ -327,15 +307,26 @@ footer{
   }
 
   .aboutDetail-text{
-    width: 30%;
+    width: 60%;
     margin:20px 0 0 20px;
     letter-spacing: 3px;
   }
 
   .about-detail a{
-    margin-top: 230px;
+    margin-top: 20px;
   }
 } 
+
+@media(min-width:1200px){
+  .aboutDetail-text{
+    width: 30%;
+    margin-top: 40px;
+  }
+
+  .about-detail a{
+    margin-top: 150px;
+  }
+}
 
 /*alldraws*/
 .alldraws{
@@ -350,11 +341,20 @@ footer{
   }
 
   .imgDetail{
-    width: 28%;
+    width: 32%;
   }
 
   .imgDetail img{
     width: 100%;
     height: 100%;
   }
+}
+
+
+/*contact*/
+.contact{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20%;
 }
