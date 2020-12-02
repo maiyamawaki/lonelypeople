@@ -11,7 +11,7 @@ const path         = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/lonelypeople', {
+  .connect(process.env.DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
