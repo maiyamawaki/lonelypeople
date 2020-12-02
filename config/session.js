@@ -9,7 +9,7 @@ module.exports = app => {
 			secret : process.env.SECRET,
 			saveUninitialized : true,
 			resave : false,
-			cookie : {maxAge : 6000},
+			cookie : {maxAge : 70000},
 			store : new MongoStore({
 				mongooseConnection : mongoose.connection,
 				ttl : 60 * 60 * 24,

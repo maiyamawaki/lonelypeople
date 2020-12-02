@@ -6,11 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 /*imgs*/
+
+
 function changeImg(){
   let num = Math.floor(Math.random()*(26-1) + 1)
   document.querySelector(".draws").src=`/img/${num}.png`
   console.log(num)
 }
+
+if(window.innerWidth < 768){
+  console.log(window.innerWidth)
+  setInterval(changeImg, 2000)
+}else if(window.innerWidth >= 768){
+  clearInterval()
+}
+
 
 /*scroll*/
 ScrollReveal().reveal(".about", {
