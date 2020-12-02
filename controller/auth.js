@@ -1,6 +1,7 @@
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
 const passport = require("../config/passport");
+
 /*Signup*/ 
 exports.signupView = (req, res)=>{
 	res.render("auth/signup")

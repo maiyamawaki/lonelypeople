@@ -11,7 +11,10 @@ const path         = require('path');
 
 
 mongoose
-  .connect(process.env.DB, {useNewUrlParser: true})
+  .connect(process.env.DB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -49,18 +52,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public', 'img')));
 
 
-
 // default value for title local
 app.locals.title = 'lonelypeople';
 
-
-
 const index = require('./routes/index');
 app.use('/', index);
-const auth = require("./routes/auth");
-app.use("/", auth)
-const allview = require("./routes/allview");
-app.use("/", allview)
+// const auth = require("./routes/auth");
+// app.use("/", auth)
+// const allview = require("./routes/allview");
+// app.use("/", allview)
 
 
 module.exports = app;
