@@ -162,7 +162,7 @@ footer{
 
 /*about*/
 .about{
-  width: 95%;
+  width: 90%;
   margin:20px auto;
   padding: 40px;
 }
@@ -200,6 +200,10 @@ footer{
 }
 
 @media (min-width: 768px){
+  .about{
+    width: 60%;
+  }
+
   .about a{
     margin-left : 200px;
   }
@@ -225,18 +229,8 @@ footer{
   height: 300px;
 }
 
-.btns{
-  display: flex;
-  justify-content: space-between;
-}
-
 .hide{
   display: none;
-}
-
-.btns button{
-  width: 20%;
-  margin: 10px 10px;
 }
 
 .more{
@@ -251,10 +245,6 @@ footer{
   .imgs{
     width: 80%;
     margin: 0 auto;
-  }
-
-  .btns button{
-    display: none;
   }
 
   .hide{
