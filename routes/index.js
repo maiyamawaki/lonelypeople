@@ -62,7 +62,7 @@ router.get("/logout", logout)
 
 
 /*private*/
-router.get("/private/all", ensureLogin, viewAll)
+router.get("/private/all",ensureLogin, viewAll)
 router.get("/private/contact",  contactView)
 router.post("/private/contact",  contactProcess) 
 

@@ -11,7 +11,7 @@ const path         = require('path');
 
 
 mongoose
-  .connect(process.env.DB, {
+  .connect('mongodb://localhost/lonelypeople', {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
@@ -57,10 +57,5 @@ app.locals.title = 'lonelypeople';
 
 const index = require('./routes/index');
 app.use('/', index);
-// const auth = require("./routes/auth");
-// app.use("/", auth)
-// const allview = require("./routes/allview");
-// app.use("/", allview)
-
 
 module.exports = app;
