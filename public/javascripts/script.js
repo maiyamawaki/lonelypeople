@@ -30,18 +30,15 @@ ScrollReveal().reveal(".about", {
 
 ScrollReveal().reveal(".imgDetail", {
   duration :1800,
-  reset:true,
 })
 
 ScrollReveal().reveal(".about-detail",{
   duration : 2000,
   scale : 1.1,
-  reset:true,
 })
 
 ScrollReveal().reveal(".title",{
   duration:2500,
   scale : 2.8,
-  reset :true
 })
 
